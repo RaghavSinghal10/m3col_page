@@ -117,7 +117,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2410.09432" target="_blank"
+                  <a href="https://arxiv.org/abs/2409.17777" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -159,16 +159,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Low-Rank Adaptation (LoRA) is a popular technique for efficient fine-tuning of foundation models. However, applying LoRA in 
-            federated learning environments, where data is distributed across multiple clients, presents unique challenges. 
-            Existing methods rely on traditional federated averaging of LoRA adapters, resulting in inexact updates.
-            To address this, we propose Federated Exact LoRA, or FedEx-LoRA, which adds a residual error term to the pretrained frozen weight matrix.
-            Our approach achieves exact updates with minimal computational and communication overhead, preserving LoRA’s efficiency. 
-            We evaluate the method on various Natural Language Understanding (NLU) and Natural Language Generation (NLG) tasks, showing 
-            consistent performance gains over state-of-the-art methods across multiple settings. Through extensive analysis, we quantify 
-            that the deviations in updates from the ideal solution are significant, highlighting the need for exact aggregation. 
-            Our method’s simplicity, efficiency, and broad applicability position it as a promising solution for accurate and 
-            effective federated fine-tuning of foundation models.
+            Deep multimodal learning has shown remarkable success by leveraging contrastive learning 
+            to capture explicit one-to-one relations across modalities. However, realworld data often 
+            exhibits <em>shared</em> relations beyond simple pairwise associations. We propose <strong>M3CoL</strong>, a 
+            <strong>M</strong>ultimodal <strong>M</strong>ixup <strong>C</strong>ontrastive <strong>L</strong>earning approach to capture nuanced shared relations 
+            inherent in multimodal data. Our key contribution is a Mixup-based contrastive loss that 
+            learns robust representations by aligning mixed samples from one modality with their 
+            corresponding samples from other modalities thereby capturing shared relations between 
+            them. For multimodal classification tasks, we introduce a framework that integrates a 
+            fusion module with unimodal prediction modules for auxiliary supervision during training, 
+            complemented by our proposed Mixup-based contrastive loss. Through extensive experiments 
+            on diverse datasets (N24News, ROSMAP, BRCA, and Food-101), we demonstrate that M3CoL 
+            effectively captures shared multimodal relations and generalizes across domains. It 
+            outperforms state-of-the-art methods on N24News, ROSMAP, and BRCA, while achieving 
+            comparable performance on Food-101. Our work highlights the significance of learning 
+            shared relations for robust multimodal learning, opening up promising avenues for 
+            future research.
           </p>
         </div>
       </div>
@@ -389,14 +395,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{singhal2024exactaggregationfederatedefficient,
-        title={Exact Aggregation for Federated and Efficient Fine-Tuning of Foundation Models}, 
-        author={Raghav Singhal and Kaustubh Ponkshe and Praneeth Vepakomma},
+      <pre><code>@misc{kumar2024harnessingsharedrelationsmultimodal,
+        title={Harnessing Shared Relations via Multimodal Mixup Contrastive Learning for Multimodal Classification}, 
+        author={Raja Kumar and Raghav Singhal and Pranamya Kulkarni and Deval Mehta and Kshitij Jadhav},
         year={2024},
-        eprint={2410.09432},
+        eprint={2409.17777},
         archivePrefix={arXiv},
-        primaryClass={cs.DC},
-        url={https://arxiv.org/abs/2410.09432}, 
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2409.17777}, 
   }</code></pre>
     </div>
 </section>
@@ -423,19 +429,23 @@
 
 <!-- Statcounter tracking code -->
   
-<!-- Default Statcounter code for Fedex-LoRA Project Page
-https://raghavsinghal10.github.io/fedex-lora_page/ -->
+<!-- Default Statcounter code for M3CoL Project Page
+https://raghavsinghal10.github.io/m3col_page/ -->
 <script type="text/javascript">
-  var sc_project=13045793; 
+  var sc_project=13047753; 
   var sc_invisible=1; 
-  var sc_security="1d08b558"; 
+  var sc_security="4c62f30c"; 
   </script>
   <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-  href="https://statcounter.com/" target="_blank"><img class="statcounter"
-  src="https://c.statcounter.com/13045793/0/1d08b558/1/" alt="Web Analytics"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics
+  Made Easy - Statcounter" href="https://statcounter.com/"
+  target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/13047753/0/4c62f30c/1/"
+  alt="Web Analytics Made Easy - Statcounter"
   referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
   <!-- End of Statcounter Code -->
 
     <!-- End of Statcounter Code -->
