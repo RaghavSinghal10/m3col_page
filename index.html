@@ -105,15 +105,15 @@
                   </span> -->
 
                   <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <span class="link-block">
+                    <a href="https://github.com/RaghavSinghal10/M3CoL" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span> -->
+                </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -242,9 +242,9 @@
       <!-- Carousel item 1 -->
       <div class="item">
         <div class="carousel-content">
-          <img src="static/images/results-glue-1.jpg" alt="RoBERTa-base on GLUE">
+          <img src="static/images/m3col-tab-1.jpg" alt="RoBERTa-base on GLUE">
           <h2 class="subtitle has-text-centered main-caption">
-            RoBERTa-base on GLUE
+            N24News
           </h2>
         </div>
       </div>
@@ -252,9 +252,9 @@
       <!-- Carousel item 2 -->
       <div class="item">
         <div class="carousel-content">
-          <img src="static/images/results-glue-2.jpg" alt="RoBERTa-large on GLUE">
+          <img src="static/images/m3col-tab-2.jpg" alt="RoBERTa-large on GLUE">
           <h2 class="subtitle has-text-centered main-caption">
-            RoBERTa-large on GLUE
+            ROSMAP and BRCA
           </h2>
         </div>
       </div>
@@ -262,9 +262,9 @@
       <!-- Carousel item 3 -->
       <div class="item">
         <div class="carousel-content">
-          <img src="static/images/results-nlg.jpg" alt="GPT-2 on E2E-NLG">
+          <img src="static/images/m3col-tab-3.jpg" alt="GPT-2 on E2E-NLG">
           <h2 class="subtitle has-text-centered main-caption">
-            GPT-2 on E2E-NLG
+            Food-101
           </h2>
         </div>
       </div>
@@ -273,8 +273,7 @@
     <!-- Caption description below -->
     <div class="content has-text-justified mt-4">
       <p>
-        Centralized LoRA (in grey) sets the benchmark skyline for its federated versions. Best results among federated methods (in blue) are
-        highlighted in bold for each setting. FedEx-LoRA consistently outperforms existing methods across various tasks and settings.
+        Comparison of M3CoL against various baselines on N24News, ROSMAP, BRCA, and Food-101 datasets.
       </p>
     </div>
   </div>
@@ -282,49 +281,28 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Deviation/Divergence Analysis</h2>
+    <h2 class="title is-3 has-text-centered">Visualization of Attention Heatmaps.</h2>
 
     <!-- Carousel wrapper -->
     <div id="fedex-lora-carousel" class="carousel results-carousel">
       <!-- Carousel item 1 -->
       <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="static/images/mrpc_r1.png" alt="RoBERTa-base on GLUE" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
+        <img src="static/images/m3col-vis-1.jpg" alt="RoBERTa-base on GLUE" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
         <h2 class="subtitle has-text-centered main-caption", style="text-align: left;">
-          Scaled Frobenius norm of divergence/deviation of updates with conventional federated
-          aggregation (FedAvg) versus ideal LoRA updates, computed after the first aggregation step. We
-          plot for query (Q) and value (V) matrices across model layers.
         </h2>
       </div>
 
       <!-- Carousel item 2 -->
       <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="static/images/rounds_a0_l10_r1.png" alt="RoBERTa-large on GLUE" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
+        <img src="static/images/m3col-vis-2.jpg" alt="RoBERTa-large on GLUE" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
         <h2 class="subtitle has-text-centered main-caption" style="text-align: left;">
-          Scaled Frobenius norm of divergence of updates with conventional federated
-          aggregation (FedAvg) versus ideal LoRA updates, computed across multiple aggregation rounds for
-          various datasets. We present results for the query matrices of the first layer.
         </h2>
       </div>
-
-      <!-- Carousel item 3 -->
-      <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="static/images/rounds_avg_l10_r1.png" alt="GPT-2 on E2E-NLG" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
-        <h2 class="subtitle has-text-centered main-caption" style="text-align: left;">
-          Scaled Frobenius norm of divergence of updates with conventional federated
-          aggregation (FedAvg) versus ideal LoRA updates, computed across multiple aggregation rounds for
-          various datasets. We present results for the average of the query and value matrices across all layers.
-        </h2>
-      </div>
-    </div>
 
     <!-- Caption description below -->
     <div class="content has-text-justified mt-4">
       <p>
-      We measure the scaled Frobenius norm of the divergence between the updates produced by FedAvg and 
-      the ideal LoRA updates, revealing several notable patterns. We observe that the divergence/deviation - (1) decreases as the model
-      depth increases, (2) grows with a higher number of local epochs, (3) is more pronounced in the query (Q) matrices compared to the value (V) matrices, 
-      (4) consistently decreases as the number of aggregation rounds increases, both for the
-      first-layer query matrix and for the average of the query and value matrices across all layers.
+      Text-guided visual grounding with varying input prompts.
       </p>
     </div>
   </div>
