@@ -185,31 +185,19 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Why FedEx-LoRA?</h2>
-    <figure>
-      <div class="columns is-centered">
-        <div class="column">
-          <figure class="image">
-            <img src="static/images/fig1-left.png" alt="FedIT method">
-            <figcaption class="has-text-centered mt-2">
-              (a) FedIT (typical federated LoRA approaches)
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column">
-          <figure class="image">
-            <img src="static/images/fig1-right.png" alt="FedEx-LoRA method">
-            <figcaption class="has-text-centered mt-2">
-              (b) FedEx-LoRA (our proposed method)
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+    <h2 class="title is-3 has-text-centered">M3CoL Captures Shared Relations</h2>
+    <figure class = "image">
+    <img src="static/images/m3col-github.jpg" alt="M3CoL captures shared relations">
       <figcaption class="has-text-justified mt-4">
-        Comparison of federated LoRA methods: (a) FedIT averages the individual client low-rank
-        adapters <strong>A</strong><sub>i</sub> and <strong>B</strong><sub>i</sub>, resulting in inexact updates. (b) FedEx-LoRA sends the error residual <strong>ΔW</strong><sub>res</sub>
-        along with the individual adapters <strong>A</strong><sub>i</sub> and <strong>B</strong><sub>i</sub>, which is added to the pretrained weight matrix <strong>W</strong><sub>0</sub>,
-        ensuring exact aggregation. Clients transmit low-rank adapters <strong>A</strong><sub>i</sub> and <strong>B</strong><sub>i</sub> in both methods.
+        Comparison of traditional contrastive and our proposed M3Co loss. 
+        <strong>M<sup>(1)</sup><sub>i</sub></strong> and <strong>M<sup>(2)</sup><sub>i</sub></strong> 
+        denote representations of the <em>i</em>-th  sample from modalities 1 and 2, respectively. Traditional 
+        contrastive loss (left panel) aligns corresponding sample representations across modalities. 
+        M3Co (right panel) mixes the <em>i</em>-th and <em>j</em>-th samples from modality 1 and enforces the 
+        representations of this mixture to align with the representations of the corresponding 
+        <em>i</em>-th and <em>j</em>-th samples from modality 2, and vice versa. For the text modality, we mix the 
+        text embeddings, while we mix the raw inputs for other modalities. Similarity (Sim) 
+        represents type of alignment enforced between the embeddings for all modalities.
       </figcaption>
     </figure>
   </div>
